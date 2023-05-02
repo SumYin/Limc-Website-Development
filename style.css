@@ -2,3 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.card-shine{
+    width: 650px;
+    height: 650px;
+    background-color: #ff1112;
+    filter: blur(180px);
+    border-radius: 300px;
+    opacity: 0;
+
+    
+    
+    mix-blend-mode: soft-light;
+}
+
+.card-shine:hover{
+    opacity: 1;
+}

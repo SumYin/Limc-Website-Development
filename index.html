@@ -104,7 +104,7 @@
         Lynx International
         <br>
         Mathematics
-        <span data-v-1ba72d52="" class="bg-clip-text text-transparent bg-gradient-to-tr from-primary-500 to-primary-600">
+        <span data-v-1ba72d52="" class="bg-clip-text text-transparent bg-gradient-to-tr from-orange-500 to-primary-400">
           Competition
         </span>
       </h1>
@@ -187,9 +187,11 @@
       </div>
     </div>
 
-    <div class="flex md:flex-row flex-col ">
-      <form class="bg-white dark:bg-darkprimary-100 rounded-xl shadow m-4 p-20 border dark:border-darkprimary-50" data-tilt data-tilt-perspective="700" data-tilt-speed="1000" data-tilt-transition="true" data-tilt-max="1" id="myForm">
-        <div>
+    <div class="flex md:flex-row flex-col relative">
+      <form class=" bg-white dark:bg-darkprimary-100 group overflow-hidden rounded-xl shadow m-4 p-20 border dark:border-darkprimary-50" data-tilt data-tilt-perspective="700" data-tilt-speed="1000" data-tilt-transition="true" data-tilt-max="1" id="myForm">
+        <div id="blur-div" class="origin-center z-0 absolute inset-0 w-[640x] h-[640px] bg-green-400 filter blur-[120px] rounded-full opacity-0 group-hover:opacity-25 transition-opacity duration-500"></div>
+        
+        <div class="relative">
           <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Sign up</h2>
           <p class="text-gray-600 dark:text-gray-400 pb-5">
             Signing up for a school: <a href="/contact" class="text-primary-500">Contact Us</a>
@@ -252,10 +254,10 @@
           </select>
         </div>
         <button type="submit"
-          class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-xl text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Submit</button>
-      </form>
+          class="relative text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-xl text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Submit</button>
+            </form>
       <div
-        class="flex flex-col bg-white dark:bg-darkprimary-100 rounded-xl border dark:border-darkprimary-50 shadow m-4 p-10 md:p-20 grow">
+        class="relative flex flex-col bg-white dark:bg-darkprimary-100 rounded-xl border dark:border-darkprimary-50 shadow m-4 p-10 md:p-20 grow">
         <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white ">American School of Barcelona
         </h2>
         <p class="text-gray-600 dark:text-gray-400 pb-5">Carrer de la Creu Coberta, 1, 08002 Barcelona, Spain</p>

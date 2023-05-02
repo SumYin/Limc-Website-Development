@@ -126,3 +126,9 @@ themeToggleBtn.addEventListener('click', function() {
 });
 
 /* -- Morph effect -- */
+const blurDiv = document.getElementById('blur-div');
+document.addEventListener('mousemove', e => {
+  const x = e.clientX;
+  const y = e.clientY;
+  blurDiv.style.transform = `translate(${x}px, ${y}px)`;
+});
