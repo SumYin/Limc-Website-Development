@@ -126,9 +126,17 @@ themeToggleBtn.addEventListener('click', function() {
 });
 
 /* -- Morph effect -- */
-const blurDiv = document.getElementById('blur-div');
+document.addEventListener('mousemove', function(e){
+  var blurDiv = document.getElementById('blur-div-1');
+  blurDiv.style.left = e.pageX + 'px';
+  blurDiv.style.top = e.pageY + 'px';
+});
+
+
+
+const blurDiv2 = document.getElementById('blur-div-2');
 document.addEventListener('mousemove', e => {
-  const x = e.clientX;
-  const y = e.clientY;
-  blurDiv.style.transform = `translate(${x}px, ${y}px)`;
+  const x = e.clientX - (blurDiv2.offsetWidth / 2);
+  const y = e.clientY - (blurDiv2.offsetHeight / 2);
+  blurDiv2.style.transform = `translate(${x}px, ${y}px)`;
 });
