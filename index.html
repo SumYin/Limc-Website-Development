@@ -134,8 +134,7 @@
       </div>
     </div>
 
-    <section data-tilt data-tilt-perspective="700" data-tilt-speed="1000" data-tilt-transition="true" data-tilt-max="1" id="Welcome" class="group overflow-hidden max-w-screen-xl xl:mx-auto m-4 bg-white dark:bg-darkprimary-100 rounded-xl shadow border dark:border-darkprimary-50">
-      <div id="blur-div-1" class="origin-center z-0 absolute inset-0 w-[640px] h-[640px] bg-blue-800 filter rounded-full opacity-0 group-hover:opacity-25 transition-opacity duration-500"></div>
+    <section style="overflow-clip-margin: 1px;" data-tilt data-tilt-perspective="700" data-tilt-speed="1000" data-tilt-transition="true" data-tilt-max="1" id="Welcome" class="pointer-events-auto group overflow-clip max-w-screen-xl xl:mx-auto m-4 bg-white dark:bg-darkprimary-100 rounded-xl shadow border dark:border-darkprimary-50">
 
       <div class="items-center py-8 px-4 text-center lg:py-16 lg:px-12">
         <a href="#"
@@ -180,18 +179,14 @@
           </div>
         </div>
       </div>
+
+      <div id="blur-div-1" class="z-10 dark:mix-blend-soft-light mix-blend-darken pointer-events-none absolute left-[-320px] top-[-320px] inset-0 w-[640px] h-[640px] opacity-0 group-hover:opacity-50 dark:group-hover:opacity-[85] blur-[120px] bg-[#ffa28b] rounded-full transition-opacity duration-500"></div>
+
     </section>
 
-    <div class="max-w-screen-xl m-4 xl:mx-auto w-full ">
-      <div class="col-1 d-flex flex-column flex-items-center position-relative">
-        <div class="home-campaign-git-line height-full rounded js-build-in-item build-in-scale-top build-in-animate" style="background: linear-gradient(#abb4ff, #797ef9, var(--color-canvas-default)); transition-delay: 500ms;" data-build-delay="500"></div>
-        <img alt="" aria-hidden="true" width="81" height="485" style="left: calc(50% - 2px); height: auto; max-width: 9vw; transition-delay: 100ms;" class="d-none d-md-block position-absolute bottom-4 js-build-in-item build-in-scale-fade build-in-animate" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/git-branch-productivity.svg">
-      </div>
-    </div>
-
-    <div class="flex md:flex-row flex-col relative">
-      <form class=" bg-white dark:bg-darkprimary-100 group overflow-hidden rounded-xl shadow m-4 p-20 border dark:border-darkprimary-50" data-tilt data-tilt-perspective="700" data-tilt-speed="1000" data-tilt-transition="true" data-tilt-max="1" id="myForm">
-        <div id="blur-div-2" class="origin-center z-0 absolute inset-0 w-[640px] h-[640px] bg-blue-800 filter blur-[120px] rounded-full opacity-0 group-hover:opacity-25 transition-opacity duration-500"></div>
+    <div class="flex md:flex-row flex-col  max-w-screen-xl xl:mx-auto mx-4 gap-4 xl:w-full">
+      <form class="bg-white dark:bg-darkprimary-100 group overflow-hidden rounded-xl shadow p-20 border dark:border-darkprimary-50" data-tilt data-tilt-perspective="700" data-tilt-speed="1000" data-tilt-transition="true" data-tilt-max="1" id="myForm">
+        <div id="blur-div-2" class="z-10 dark:mix-blend-soft-light mix-blend-darken pointer-events-none absolute left-[-320px] top-[-320px] inset-0 w-[640px] h-[640px] opacity-0 group-hover:opacity-50 dark:group-hover:opacity-[85] blur-[120px] bg-[#ffa28b] rounded-full transition-opacity duration-500"></div>
         
         <div class="relative">
           <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Sign up</h2>
@@ -257,17 +252,21 @@
         </div>
         <button type="submit"
           class="relative text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-xl text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Submit</button>
-            </form>
-      <div
-        class="relative flex flex-col bg-white dark:bg-darkprimary-100 rounded-xl border dark:border-darkprimary-50 shadow m-4 p-10 md:p-20 grow">
+      </form>
+      
+      <div id="map" class="group flex flex-col bg-white dark:bg-darkprimary-100 overflow-hidden relative rounded-xl border dark:border-darkprimary-50 shadow p-10 md:p-20 grow " data-tilt data-tilt-perspective="700" data-tilt-speed="1000" data-tilt-transition="true" data-tilt-max="1">
+
         <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white ">American School of Barcelona
         </h2>
         <p class="text-gray-600 dark:text-gray-400 pb-5">Carrer de la Creu Coberta, 1, 08002 Barcelona, Spain</p>
-        <div class="flex-grow rounded-xl shadow">
+        <div class="flex-grow rounded-xl shadow z-20">
           <iframe class="rounded-xl shadow w-full h-full"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.5479569694908!2d2.081859076712353!3d41.38390499621011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4999f99b49f61%3A0x5ec4bd1415edda09!2sAmerican%20School%20of%20Barcelona%20(ASB)!5e0!3m2!1sen!2ses!4v1681649010923!5m2!1sen!2ses"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
+        <div id="blur-div-3" class="z-10 dark:mix-blend-soft-light mix-blend-darken pointer-events-none absolute left-[-320px] top-[-320px] inset-0 w-[640px] h-[640px] opacity-0 group-hover:opacity-50 dark:group-hover:opacity-[85] blur-[120px] bg-[#ffa28b] rounded-full transition-opacity duration-500"></div>
+
       </div>
     </div>
 
