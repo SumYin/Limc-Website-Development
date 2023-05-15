@@ -156,3 +156,20 @@ document.addEventListener('mousemove', (event) => {
   const y = event.clientY - section3Rect.top;
   blurDiv3.style.transform = `translate(${x}px, ${y}px)`;
 });
+
+/* -- Line animation -- */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('build-in-animate');
+      // entry.target.classList.add('build-in-animate');
+    }
+    else {
+      entry.target.classList.remove('build-in-animate');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.build-in-scale-top'); 
+hiddenElements.forEach((el) => observer.observe(el));

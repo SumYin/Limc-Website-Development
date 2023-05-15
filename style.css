@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .line-hidden {
+    transition: transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: scaleY(0);
+    transform-origin: 0 0;
+}
+
+.line-show {
+    transform: scaleY(1);
+} */
+
+.build-in-scale-top.build-in-animate {
+    transform: scaleY(1);
+}
+.build-in-scale-top {
+    transition: transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: scaleY(0);
+    transform-origin: 0 0;
+}
