@@ -1,7 +1,7 @@
 /* -- Timer -- */
 
 // Setup End Date for Countdown (getTime == Time in Milleseconds)
-let launchDate = new Date("Oct 28, 2023 12:00:00").getTime();
+let launchDate = new Date("April 20, 2024 9:00:00").getTime();
 
 // Setup Timer to tick every 1 second
 let timer = setInterval(tick, 1000);
@@ -57,7 +57,7 @@ document.getElementById('myForm').addEventListener('submit', async (event) => {
   });
 
   // Make POST request to webhook URL
-  const response = await fetch('https://eo8bpvtfy5kmttd.m.pipedream.net', {
+  const response = await fetch('http://127.0.0.1:5000/', {
     method: 'POST',
     body: JSON.stringify(jsonObject),
     headers: {
@@ -66,22 +66,23 @@ document.getElementById('myForm').addEventListener('submit', async (event) => {
   });
 
   if (response.ok) {
+    // Select the button with the data-modal-target attribute
+    let button = document.getElementById('successButton');
+    
+   // Simulate a click event
+    button.click();
+
     // Webhook request successful
     console.log('Form data sent to webhook successfully.');
-    // Redirect to a different page
-    // Get the modal element
-    const modal = document.getElementById('successModal');
 
-    // Show the modal
-    modal.classList.toggle('hidden');
-
-    // Hide the modal
-    // modal.classList.add('hidden');
+    // modal.toggle();
   } else {
     // Webhook request failed
     console.error('Failed to send form data to webhook.');
   }
 });
+
+/* --modal button thingy--*/ 
 
 /* --dark mode-- */
 var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
@@ -158,18 +159,4 @@ document.addEventListener('mousemove', (event) => {
 });
 
 /* -- Line animation -- */
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add('build-in-animate');
-      // entry.target.classList.add('build-in-animate');
-    }
-    else {
-      entry.target.classList.remove('build-in-animate');
-    }
-  });
-});
 
-const hiddenElements = document.querySelectorAll('.build-in-scale-top'); 
-hiddenElements.forEach((el) => observer.observe(el));
