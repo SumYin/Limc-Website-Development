@@ -2,6 +2,7 @@
 export default {
   content: [
     "./index.html",
+    "./404.html",
     "./.{html,js}",
     "./node_modules/flowbite/**/*.js",
   ],

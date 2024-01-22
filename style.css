@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
 /* .line-hidden {
     transition: transform .7s cubic-bezier(0.16, 1, 0.3, 1);
     transform: scaleY(0);
