@@ -9,11 +9,11 @@ if (process.env.GH) {
 export default defineConfig({
   base: BASE_URL,
   build: {
-    rollupOptions : {
+    rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
         schedule: resolve(__dirname, 'schedule/index.html'),
-        error: resolve(__dirname, '404/index.html'),
+        error: resolve(__dirname, '404.html'),
       }
     }
   }
