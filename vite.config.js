@@ -1,8 +1,13 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
+let BASE_URL = '/';
+if (process.env.GH) {
+  BASE_URL = '/Limc-Website-Development/';
+}
+
 export default defineConfig({
-  base: '',
+  base: BASE_URL,
   build: {
     rollupOptions : {
       input: {
