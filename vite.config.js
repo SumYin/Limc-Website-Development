@@ -13,6 +13,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         schedule: resolve(__dirname, 'schedule/index.html'),
+        contact: resolve(__dirname, 'contact/index.html'),
+        about: resolve(__dirname, 'about/index.html'),
         error: resolve(__dirname, '404.html'),
       }
     }
