@@ -12,7 +12,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        schedule: resolve(__dirname, 'schedule/index.html'),
+        details: resolve(__dirname, 'details/index.html'),
         contact: resolve(__dirname, 'contact/index.html'),
         about: resolve(__dirname, 'about/index.html'),
         error: resolve(__dirname, '404.html'),

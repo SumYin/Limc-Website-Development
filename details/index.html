@@ -6,7 +6,7 @@
   <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../style.css" />
-  <title>Schedule</title>
+  <title>Details</title>
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -69,8 +69,8 @@
               class="block py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-500 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
           </li>
           <li>
-            <a href="/schedule/"
-              class="block py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-500 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Schedule</a>
+            <a href="/details/"
+              class="block py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-500 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Details</a>
           </li>
         </ul>
       </div>
@@ -81,9 +81,9 @@
   <section>
     <div class="mx-4 py-8 xl:mx-auto max-w-screen-xl lg:py-16 ">
       <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Competition Day Schedule
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Competition Schedule
         </h2>
-        <p class="mb-4 font-light">On competition day we will follow this schedule for LMIC 10</p>
+        <p class="mb-4 font-light">The competition is scheduled for Saturday, April 20, 2023, at ASB, running from 9:00 AM to 4:00 PM. Students will be provided with lunch, snacks, and a shirt exclusively made by our Eco Club, with the registration fee to be determined.</p>
         <a href="../#myForm" class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
           Sign Up
           <svg class="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
@@ -92,14 +92,18 @@
     </div>
   </section>
 
-  <section style="overflow-clip-margin: 1px;" data-tilt data-tilt-perspective="700" data-tilt-speed="1000"
-    data-tilt-transition="true" data-tilt-max="1" id="Welcome"
-    class="antialiased mb-4 pointer-events-auto group overflow-clip  bg-white dark:bg-darkprimary-100 rounded-xl shadow border dark:border-darkprimary-50 flex md:flex-row flex-col  max-w-screen-xl xl:mx-auto mx-4 gap-4 xl:w-full">
-      <div class="flow-root py-8 px-4 max-w-screen-xl lg:py-6 lg:px-6">
-        <div class="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
+
+
+  <section>
+    <div class="flow-root py-8 px-4 max-w-screen-xl lg:py-6 lg:px-0 xl:mx-auto">
+        <div 
+        style="overflow-clip-margin: 1px;" data-tilt data-tilt-perspective="700" data-tilt-speed="1000"
+        data-tilt-transition="true" data-tilt-max="1"
+        class="-my-4 divide-y divide-gray-200 dark:divide-gray-700 xl:w-fit lg:w-fit
+        pointer-events-auto group overflow-clip  bg-white dark:bg-darkprimary-100 rounded-xl shadow border dark:border-darkprimary-50 gap-4 px-4 xl:px-0 xl:pr-4 ">
           <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
             <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-              09:00 - 10:00
+              09:30 - 10:00
             </p>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               <a href="#" class="hover:underline">Arrival and Welcome</a>
@@ -186,12 +190,27 @@
               <a href="#" class="hover:underline">Close Ceremony and Awards</a>
             </h3>
           </div>
+          <div id="blur-div-1" class="z-10 dark:mix-blend-soft-light mix-blend-darken pointer-events-none absolute left-[-320px] top-[-320px] inset-0 w-[640px] h-[640px] opacity-0 group-hover:opacity-50 dark:group-hover:opacity-[85] blur-[120px] bg-primary-300 rounded-full transition-opacity duration-500"></div>
+
         </div>
       </div>
 
-      <div id="blur-div-1" class="z-10 dark:mix-blend-soft-light mix-blend-darken pointer-events-none absolute left-[-320px] top-[-320px] inset-0 w-[640px] h-[640px] opacity-0 group-hover:opacity-50 dark:group-hover:opacity-[85] blur-[120px] bg-primary-300 rounded-full transition-opacity duration-500"></div>
+
+    </section>
 
 
+    <section>
+      <div class="mx-4 py-8 xl:mx-auto max-w-screen-xl lg:py-16 ">
+        <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Competition Details
+          </h2>
+          <p class="mb-4 font-light">Please note that the competition is open exclusively to 10th-grade students and below, considering various factors such as students’ preparations for IB exams and the complexity of creating challenging questions for 11th and 12th graders. The competition format comprises three rounds: Individual, Team, and a distinct component where individual scores contribute to the team score, determining participants for the final round.</p>
+          <a href="../#myForm" class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
+            Sign Up
+            <svg class="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+          </a>
+        </div>
+      </div>
     </section>
 
 
@@ -208,7 +227,7 @@
           <a href="#" class="mr-4 hover:underline md:mr-6">Contact</a>
         </li>
         <li>
-          <a href="/schedule/" class="hover:underline">Schedule</a>
+          <a href="/details/" class="hover:underline">Details</a>
         </li>
       </ul>
     </div>
