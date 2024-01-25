@@ -20,9 +20,11 @@
 <body class="flex-grow bg-gray-100 dark:bg-darkprimary-200 flex justify-center flex-col min-h-screen">
   <nav class="bg-white dark:bg-darkprimary-100 border-gray-200 dark:border-darkprimary-50 border-b shadow-xl">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a class="flex items-center">
-        <img src="../assets/logo_n.svg" class="h-8 mr-3 rounded" alt="Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">LIMC</span>
+      <div class="flex items-center">
+        <a href="../" class="flex">
+          <img src="../assets/logo_n.svg" class="h-8 mr-3 rounded" alt="Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">LIMC</span>
+        </a>
         <button id="theme-toggle" type="button"
           class="mx-4 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
           <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
@@ -36,7 +38,7 @@
               fill-rule="evenodd" clip-rule="evenodd"></path>
           </svg>
         </button>
-      </a>
+      </div>
       <button data-collapse-toggle="navbar-dropdown" type="button"
         class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-xl md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-dropdown" aria-expanded="false">
