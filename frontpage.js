@@ -44,40 +44,40 @@ function tick () {
 
 
 /* -- SignUp -- */
-document.getElementById('myForm').addEventListener('submit', async (event) => {
-  event.preventDefault(); // Prevent form from submitting normally
+// document.getElementById('myForm').addEventListener('submit', async (event) => {
+//   event.preventDefault(); // Prevent form from submitting normally
 
-  // Get form data
-  const formData = new FormData(event.target);
+//   // Get form data
+//   const formData = new FormData(event.target);
 
-  // Convert form data to JSON object
-  const jsonObject = {};
-  formData.forEach((value, key) => {
-    jsonObject[key] = value;
-  });
+//   // Convert form data to JSON object
+//   const jsonObject = {};
+//   formData.forEach((value, key) => {
+//     jsonObject[key] = value;
+//   });
 
-  // Make POST request to webhook URL
-  const response = await fetch('http://127.0.0.1:5000/', {
-    method: 'POST',
-    body: JSON.stringify(jsonObject),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
+//   // Make POST request to webhook URL
+//   const response = await fetch('http://127.0.0.1:5000/', {
+//     method: 'POST',
+//     body: JSON.stringify(jsonObject),
+//     headers: {
+//       'Content-Type': 'application/json'
+//     }
+//   });
 
-  if (response.ok) {
-    // Select the button with the data-modal-target attribute
-    let button = document.getElementById('successButton');
+//   if (response.ok) {
+//     // Select the button with the data-modal-target attribute
+//     let button = document.getElementById('successButton');
     
-   // Simulate a click event
-    button.click();
+//    // Simulate a click event
+//     button.click();
 
-    // Webhook request successful
-    console.log('Form data sent to webhook successfully.');
+//     // Webhook request successful
+//     console.log('Form data sent to webhook successfully.');
 
-    // modal.toggle();
-  } else {
-    // Webhook request failed
-    console.error('Failed to send form data to webhook.');
-  }
-});
+//     // modal.toggle();
+//   } else {
+//     // Webhook request failed
+//     console.error('Failed to send form data to webhook.');
+//   }
+// });
