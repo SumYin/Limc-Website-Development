@@ -15,6 +15,7 @@ export default defineConfig({
         details: resolve(__dirname, 'details/index.html'),
         about: resolve(__dirname, 'about/index.html'),
         error: resolve(__dirname, '404.html'),
+        past: resolve(__dirname, 'past/index.html'),
       }
     }
   }
